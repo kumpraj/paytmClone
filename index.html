@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ktm Clone</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        White: '#f5f7fa',
+                        LightBlue:'#00baf2',
+                        DarkBlue:'#0f4a89' 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F5F7FA] mx-auto">
+    <nav class="mx-auto shadow-lg py-4">
+        <div class="flex justify-around flex-wrap">
+            <!-- <img src="" alt="hamburger" class="lg:hidden flex"> -->
+            <a href="#">
+                <img class="w-[180px]" src="./assets/paytm_logo_header.png" alt="paytm logo">
+            </a>
+            
+            <ul class="flex basis-2/4 flex-wrap justify-between items-center font-semibold text-lg">
+                <li>KTM for Consumer</li>
+                <li>KTM for Business</li>
+                <li>Company</li>
+                <li>Investor Relations</li>
+                <li>Career</li>
+            </ul>
+            <div class="flex  flex-end items-center justify-center bg-[#00baf2] rounded">
+                <span class="text-[15px] text-white font-semibold pt-[2px] pd-[2px] pl-[20px] pr-[2px]">Sign In</span>
+                <img class = "" src="./assets/sign_in_user.svg" alt="user sign in">
+            </div>
+        </div>
+    </nav>
+    <section class="flex justify-center my-2 ">
+        <span class="font-semibold">No Wallet KYC Required</span>
+        <span class="text-2xl"> &nbsp;😊&nbsp;</span> 
+        <span class="">to pay using UPI on KTM. &nbsp;</span>
+        <span class="font-semibold">Learn More.</span>
+        <h4 class="flex-col">This is just for Educational Purpose</h4>
+    </section>
+    <h1 class="font-medium text-lg text-center">This is just for Educational Purpose!!!</h1>
+    <!-- hero section -->
+    <section id="hero" class="">
+        <div id="upper" class="mt-24 flex justify-between">
+            <div id="hero-upper-left" class="w-1/2 ml-32">
+                <div>
+                    <img class="w-20 shadow-lg" src="./assets/paytm_upi_icon.png" alt="">
+                </div>
+                <h1 class="text-6xl font-[700] my-8">India's Most-loved Payments App</h1>
+                <div class="text-2xl w-[480px] font-medium">
+                    Recharge & pay bills, book flights & movie tickets, 
+                    open a savings account, invest in stocks & mutual funds, 
+                    and do a lot more.
+                </div>
+            </div>
+            <div id="hero-upper-right">
+                <img class="w-[530px]" src="./assets/banner_image.png" alt="">
+            </div>
+        </div>
+        <div id="bottom-hero" class="relative bottom-28 text-white ml-32 flex items-center justify-left border-2 w-fit gap-3 py-3 px-4 rounded-3xl border-black bg-black font-medium">
+            Download KTM App
+            <a href="#">
+                <svg  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 
+                15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427
+                 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 
+                 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 
+                 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white">
+                </path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 
+                0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 
+                7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white">
+                </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section id="recharge-bill-pay" class="bg-LightBlue py-12">
+        <div class="">
+            <div class="">
+                <h1 class="ml-32 mb-8 text-white text-5xl font-semibold">Recharge & Pay Bills on KTM.</h1>
+                <div class="flex flex-wrap justify-center gap-28">
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/Recharge_prepaid_mobile.png" alt="recharge prepid mobile">
+                        Recharge <br>
+                        <span class="font-semibold">Prepaid <br> Mobile ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/pay_rent_payment.png" alt="pay rent">
+                        Pay <br>
+                        <span class="font-semibold">Rent <br> Payment ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/pay_electricity_bill.png" alt="electricity bill">
+                        Pay <br>
+                        <span class="font-semibold">Electricity <br> Bill ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/recharge_dth_connection.png" alt="recharge DTH">
+                        Recharge <br>
+                        <span class="font-semibold">DTH <br> Connection ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/book_gas_cylinder.png" alt="book gas cylinder">
+                        Recharge <br>
+                        <span class="font-semibold">Prepaid <br> Mobile ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16"  src="./assets/pay_credit_card_bill.png" alt="credit card bill">
+                        Pay <br>
+                        <span class="font-semibold">Credit <br>Card Bill ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="w-16" src="./assets/all_payment_services.png" alt="all payment services">
+                        All <br>
+                        <span class="font-semibold">Payment <br> Services ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="book-buy-paytm" class="bg-DarkBlue py-12">
+        <div class="">
+            <div class="">
+                <h1 class="ml-32 mb-8 text-white text-5xl font-semibold">Book & Buy on KTM.</h1>
+                <div class="flex flex-wrap justify-center gap-28">
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/movie.png" alt="movie tickets">
+                        <span class="font-bold text-lg mt-8">Movie <br> Tickets ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/flight.png" alt="flight tickets">
+                        <span class="font-bold text-lg mt-8">Flight <br> Tickets ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/bus.png" alt="Bus tickets">
+                        <span class="font-bold text-lg mt-8">Bus <br> Tickets ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/train.png" alt="train tickets">
+                        <span class="font-bold text-lg mt-8">Train <br> Tickets ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/car_bikes.png" alt="car bikes">
+                        <span class="font-bold text-lg mt-8">Car <br> Bikes ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16"  src="./assets/international_flights.png" alt="international_flights">
+                        <span class="font-bold text-lg mt-8">International <br>Flights ></span>
+                    </div>
+                    <div class="text-white">
+                        <img class="mb-4 w-16" src="./assets/invest_stocks.png" alt="invest_stocks">
+                        <span class="font-bold text-lg mt-8">Invest <br> in Stocks ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="paytm_instruments" class="bg-slate-100">
+        <div id="paytm-wallet" class="p-12">
+            <h1 class="text-5xl font-bold mb-8 mx-24">KTM Payment Instruments</h1>
+            <div class="flex items-center justify-center flex-wrap bg-white mx-24">
+                <div class="px-20 py-12 my-12">
+                    <div class="mb-4 flex items-center gap-2">
+                        <img class="w-[75px] border-2 rounded-2xl" src="./assets/wallet.png" alt="paytm wallet">
+                        <span class="font-bold ">KTM <br> Wallet</span>
+                    </div>
+                    <h2 class="text-4xl font-bold my-8">The Fastest Way to <br> Pay In-store & Online.</h2>
+                    <p class="my-8 font-semibold text-lg">Load up your KTM Wallet for free and make payments <br>
+                        in a jiffy at over 21 million stores, websites and apps.
+                    </p>
+                    <div class="text-white  flex items-center justify-left border-2 w-fit gap-3 py-3 px-4 rounded-3xl border-black bg-black font-medium">
+                        Download KTM App
+                        <a href="#">
+                            <svg  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 
+                            15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427
+                             3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 
+                             5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 
+                             1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white">
+                            </path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 
+                            0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 
+                            7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white">
+                            </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <img class="h-[450px]" src="./assets/payment_instrument.png" alt="paytm image">
+            </div>
+        </div>
+        <div id="upi-money-transfer" class="p-12">
+            <div class="flex items-center justify-center flex-wrap bg-white mx-24">
+                <div class="px-20 py-12 my-12">
+                    <div class="mb-4 flex items-center gap-2">
+                        <img class="w-[75px] border-2 rounded-2xl" src="./assets/upi_money_transfer.png" alt="paytm wallet">
+                        <span class=" text-lg font-bold">UPI Money<br>Transfer</span>
+                    </div>
+                    <h2 class="text-4xl font-bold my-8">Pay anyone directly<br> from your bank <br>account</h2>
+                    <p class="my-8 font-semibold text-lg">Pay anyone, everywhere. Make contactless & secure <br>
+                         payments in-stores or online using KTM Wallet or <br>
+                         Directly from your Bank Account. Plus, send & receive <br>
+                         money from anyone.
+                    </p>
+                    <div class="text-white  flex items-center justify-left border-2 w-fit gap-3 py-3 px-4 rounded-3xl border-black bg-black font-medium">
+                        Download KTM App
+                        <a href="#">
+                            <svg  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 
+                            15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427
+                             3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 
+                             5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 
+                             1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="white">
+                            </path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 
+                            0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 
+                            7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="white">
+                            </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <img class="h-[450px]" src="./assets/money-transfer-image.png" alt="money transfer image">
+            </div>
+        </div>
+        <div id="paytm-postpaid" class="p-12">
+            <div class="flex items-center justify-center flex-wrap bg-white mx-24">
+                <div class="px-20 py-12 my-12">
+                    <div class="mb-4 flex items-center gap-2">
+                        <img class="w-[180px] rounded-2xl" src="./assets/paytm_postpaid_icon.png" alt="paytm postpaid icon">
+                     </div>
+                    <h2 class="text-4xl font-bold my-8">Want it?<br> No more waiting for it.</h2>
+                    <p class="my-8 font-semibold text-lg">With KTM Postpaid, your wishlist doesn't have to be <br>
+                         on the waitlist. Shop for the things you want today and <br>
+                         pay for them next month.
+                    </p>
+                    <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                        Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                    </div>
+                </div>
+                <img class="h-[500px]" src="./assets/paytm_postpaid_image.png" alt="money transfer image">
+            </div>
+        </div>
+        <div id="paytm-card-div" class=" flex p-12">
+            <div class="flex items-center justify-center gap-16 flex-wrap mx-auto">
+                <div id="card-left" class="px-20 py-12 my-12 bg-white">
+                    <div  class="">
+                        <img class="h-[100px]" src="./assets/hdfc_card_icon.png" alt="hdfc card icon">
+                     </div>
+                    <h2 class="text-4xl font-bold my-8">Unlimited Cashback <br>Every time</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        KTM HDFC Bank Select Credit Card. A card <br>
+                         with assured Cashback and incredible offers.
+                    </p>
+                    <img class="h-[300px]" src="./assets/hdfc_card_image.png" alt="hdfc card image">
+                </div>
+                <div id="card-right"  class="px-20 py-12 my-12 bg-white">
+                    <div  class="">
+                        <img class="h-[25px] mt-[75px]" src="./assets/sbi_card_icon.png" alt="sbi card icon">
+                     </div>
+                    <h2 class="text-4xl font-bold my-8">India’s Most <br>Sincere Credit Card</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        KTM SBI Card SELECT - With Intelligent <br>
+                        Features & Great Rewards that Never Expire
+                    </p>
+                    <img class="h-[300px]" src="./assets/sbi_card_image.png" alt="sbi card image">
+                </div>
+            </div>
+        </div>
+        <div id="financial-services" class="bg-white p-20">
+            <h1 class="text-5xl font-bold mb-8 ml-36 w-fit">Financial Services by KTM</h1>
+            <div class="flex gap-40 items-center justify-center flex-wrap">
+                <div class="">
+                    <div class="mb-4">
+                        <img class="w-[215px]" src="./assets/paytm_payments_bank_icon.png" alt="paytm payments bank icon">
+                    </div>
+                    <h2 class="text-4xl font-bold my-12">India's most sincere <br> bank.</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        KTM Payments Bank offers secure, transparent and <br>
+                        risk-free banking at your fingertips. With instant <br>
+                        account opening, virtual debit card and zero balance <br>
+                        requirements, experience the future of banking today.
+                    </p>
+                    <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                        Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                    </div>
+                </div>
+                <img class="w-[450px]" src="./assets/paytm_payments_bank_image.png" alt="paytm payments bank image">
+            </div>
+        </div>
+    </section>
+    <section id="paytm-money" class="bg-[url('./assets/paytm_money_bg_image.png')] bg-no-repeat bg-cover">
+        <div id="paytm-money-div" class="p-20">
+            <div class="flex gap-40 items-center justify-center flex-wrap">
+                <img class="w-[475px]" src="./assets/paytm_money_app_img.png" alt="paytm money app image">
+                <div class="">
+                    <div class="mb-4">
+                        <img class="h-[55px]" src="./assets/paytm_money_icon.png" alt="paytm money icon">
+                    </div>
+                    <h2 class="text-4xl font-bold my-12">Build Long-term<br>Wealth & Achieve <br>your Goals</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        Investing on KTM Money is transparent, low-cost and <br>
+                        commission-free. Buy stocks & mutual funds that can <br>
+                        help you create wealth & realise your dreams. 
+                    </p>
+                    <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                        Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="paytm-insurance" class="bg-White">
+        <div id="paytm-money-div" class="p-20">
+            <div class="flex gap-40 items-center justify-center flex-wrap">
+                <div class="">
+                    <div class="mb-4">
+                        <img class="h-[55px]" src="./assets/paytm_insurance_icon.jpeg" alt="paytm insurance icon">
+                    </div>
+                    <h2 class="text-4xl font-bold my-12">Insurance made easy.</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        Buying insurance does not have to be tedious, time- <br>
+                        consuming & confusing. KTM Insurance removes the <br>
+                        worry of getting insured by making it simple, <br>
+                        convenient & easy-to-understand. 
+                    </p>
+                    <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                        Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                    </div>
+                </div>
+                <img class="w-[475px]" src="./assets/paytm_insurance_img.png" alt="paytm insurance image">
+            </div>
+        </div>
+    </section>
+    <section id="paytm-loan" class="">
+        <div id="paytm-loan-div" class="p-20">
+            <div class="flex gap-40 items-center justify-center flex-wrap">
+                <img class="w-[435px]" src="./assets/paytm_loan_img.png" alt="paytm loan image">
+                <div class="">
+                    <div class="mb-4">
+                        <img class="h-[55px]" src="./assets/personal_loan_icon.png" alt="paytm personal loan icon">
+                    </div>
+                    <h2 class="text-4xl font-bold my-12">Get a Personal Loan in <br> 2 Minutes.</h2>
+                    <p class="my-8 font-semibold text-lg">
+                        KTM offers India's quickest multi-purpose, hassle-free loan. It <br>
+                        is 100% digital, transparent and paperless.
+                    </p>
+                    <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                        Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Business-Services" class=" bg-white">
+        <div id="payments-online" class="p-12">
+            <h1 class="text-5xl font-bold mx-24">Business Services by KTM</h1>
+            <div id="paytm-payments-online-div" class="p-20 ">
+                <div class="py-20 flex gap-40 items-center justify-center flex-wrap bg-[#F5F7FA]">
+                    <div class="">
+                        <h2 class="text-4xl font-bold my-12">Accept payments <br> onlinw with ease</h2>
+                        <p class="my-8 font-semibold text-lg">
+                            Grow your business with the payment gateway that<br>
+                            powers India’s largest brands and even the KTM App
+                        </p>
+                        <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                            Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                        </div>
+                    </div>
+                    <img class="w-[435px]" src="./assets/payments_online_img.png" alt="payments online image">
+                </div>
+            </div>
+        </div>
+        <div id="payments-shop" class="p-12">
+            <div id="paytm-payments-shop-div" class="p-20 ">
+                <div class="py-20 flex gap-40 items-center justify-center flex-wrap bg-[#F5F7FA]">
+                    <div class="">
+                        <h2 class="text-4xl font-bold my-12">In-shop payments <br> powered by KTM.</h2>
+                        <p class="my-8 font-semibold text-lg">
+                            Millions of small & big businesses use KTM to accept <br>
+                            payments anywhere any time with a wide range of <br>
+                            solutions for all kind of merchants
+                        </p>
+                        <div class="text-white  flex items-center justify-center border-2 w-fit gap-2 py-3 px-8 rounded-full bg-DarkBlue font-medium cursor-pointer">
+                            Learn More <span class="text-xl font-bold mb-1"><i class="fa-duotone fa-greater-than"></i></span>
+                        </div>
+                    </div>
+                    <img class="w-[435px]" src="./assets/shop_payments_img.png" alt="shop payments image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Business-tools" class="mx-auto md:py-36 bg-white">
+        <h1 class="text-5xl font-bold mb-24 text-left md:ml-52">Business Tools to help <br>your business grow</h1>
+        <div id="tools" class="w-full flex flex-wrap items-center justify-center gap-10">
+            <div>
+                <img class="w-[240px] mb-8" src="./assets/pos_billing_img.png" alt="pos billing img">
+                <span class="text-2xl font-bold">POS Billing <br>Software</span>
+                <p class="mb-2 text-[20px] leading-6 font-medium mt-12" >Say Hello to Smart <br> Retail Business Management</p>
+                <a class="font-bold" href="#">Learn More</a>
+            </div>
+            <div>
+                <img class="w-[240px] mb-8" src="./assets/paytm_business_app_img.png" alt="paytm business app img">
+                <span class="text-2xl font-bold">KTM for<br>Business App</span>
+                <p class="mb-2 text-[20px] leading-6 font-medium mt-12" >Everything you need to <br> manage your business <br> on your phone</p>
+                <a class="font-bold" href="#">Learn More</a>
+            </div>
+            <div>
+                <img class="w-[240px] mb-8" src="./assets/advertise_paytm_img.png" alt="advertise paytm img">
+                <span class="text-2xl font-bold">Advertise on <br>KTM</span>
+                <p class="mb-2 text-[20px] leading-6 font-medium mt-12" >Grow your business by <br> advertising on India’s <br> largest  mobile business</p>
+                <a class="font-bold" href="#">Learn More</a>
+            </div>
+            <div>
+                <img class="w-[240px] mb-8" src="./assets/business_khata_img.png" alt="business khata img">
+                <span class="text-2xl font-bold">Business <br>Khata</span>
+                <p class="mb-2 text-[20px] leading-6 font-medium mt-12">Managing Khata made <br> easy</p>
+                <a class="font-bold" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section id="paytm-money-cards-sec" class="w-full py-36 bg-white">
+        <div class="container flex justify-center gap-10 flex-wrap">
+            <div class="flex flex-col">
+                <img class="w-36 pr-2 pb-12" src="./assets/paytm_money_cards_icon.png" alt="paytm money">
+                <p class="my-2">
+                    Get started on wealth <br>
+                    creation journey with Zero <br>
+                    brokerage fee & no hidden <br> charges.
+                </p>
+                <a class="text-lg text-LightBlue" href="#">Learn More</a>
+            </div>
+            <div id="pm-card1" class="bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-36 h-40" src="./assets/invest_stocks_card_img.png" alt="invest in stocks">
+                <div class="text-center text-white text-lg font-semibold">
+                    Invest in <br> Stocks
+                </div>
+            </div>
+            <div id="pm-card2" class="bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-36 h-40" src="./assets/apply_ipo_card_img.png" alt="apply for ipo">
+                <div class="text-center text-white text-lg font-semibold">
+                    Apply for IPO
+                </div>
+            </div>
+            <div id="pm-card3" class="bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-36 h-40" src="./assets/invest_etfs_card_img.png" alt="invest in etfs">
+                <div class="text-center text-white text-lg font-semibold">
+                    Invest in <br> ETFs
+                </div>
+            </div>
+            <div id="pm-card4" class="bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-36 h-40" src="./assets/buy_gaold_card_img.png" alt="buy gold">
+                <div class="text-center text-white text-lg font-semibold">
+                    Buy Gold
+                </div>
+            </div>
+            <div id="pm-card5" class="bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-36 h-40" src="./assets/invest_mf_card_img.png" alt="invest in mf">
+                <div class="text-center text-white text-lg font-semibold">
+                    Invest in <br> Mutual Funds
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="paytm-travel-cards-sec" class="w-full py-36 bg-white">
+        <div class="container flex justify-center gap-10 flex-wrap">
+            <div class="flex flex-col">
+                <img class="w-36 pr-2 pb-12" src="./assets/paytm_travel_icon.png" alt="paytm travel">
+                <p class="my-2">
+                    Best travel solutions with <br>
+                    quick ticket bookings, great <br>
+                    offers and easy refunds
+                </p>
+                <a class="text-lg text-LightBlue" href="#">Learn More</a>
+            </div>
+            <div id="pt-card1" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/pt_flight_icon.png" alt="flight cashback">
+                <div class="text-left text-white text-lg font-semibold">
+                    Flat 14% <br> Cashback
+                    <p class="text-xs">With Code <span>WELCOMEFLIGHT</span></p>
+                </div>
+            </div>
+            <div id="pt-card2" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/pt_refund_icon.png" alt="refund">
+                <div class="text-left text-white text-lg font-semibold">
+                    100% Refund
+                    <p class="text-xs">With KTM's <br>Cancellation Protect</p>
+                </div>
+            </div>
+            <div id="pt-card3" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/bus.png" alt="bus">
+                <div class="text-left text-white text-lg font-semibold">
+                    Flat 10% <br> Cashback
+                    <p class="text-xs">With Code HAPPYBUS</p>
+                </div>
+            </div>
+            <div id="pt-card4" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/pt_travel_safe_icon.png" alt="travel safe">
+                <div class="text-left text-white text-lg font-semibold">
+                    Sanitised Bus <br>
+                    Options With <br>
+                    TravelSafe+
+                </div>
+            </div>
+            <div id="pt-card5" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/train.png" alt="train">
+                <div class="text-left text-white text-lg font-semibold">
+                    Hassle Free <br>Train Ticket <br> Bookings
+                </div>
+            </div>
+            <div id="pt-card6" class="text-white w-36 h-56 pb-4 flex flex-col justify-between bg-[#00baf2] opacity-70 hover:opacity-100 p-1.5 rounded-lg">
+                <img class="w-16 h-16 my-auto" src="./assets/pt_pnr_icon.png" alt="pnr">
+                <div class="text-left text-white text-lg font-semibold">
+                    PNR Status <br> Check In Few <br> Simple Clicks
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="my-20 mx-auto md:mb-44">
+        <section id="download-paytm" class="flex flex-col gap-6 md:flex-row items-center justify-between mx-auto md:mt-24 md:mb-24 md:w-5/6">
+            <h2 class="text-2xl font-semibold mr-8">Downlaod KTM App <br>to pay from anywhere</h2>
+             <div id="download-buttons" class="flex flex-wrap gap-2">
+                <img src="./assets/apple_download.svg" alt="apple download button">
+                <img src="./assets/googleplay_download.svg" alt="google play button">
+            </div>
+            <div class="flex flex-wrap items-center gap-6">
+                <a href="#"><img alt="twitter_icon" src="./assets/twitter_icon.svg"></a>
+                <a href="#"><img alt="instagram_icon" src="./assets/instagram_icon.svg"></a>
+                <a href="#"><img alt="facebook_icon" src="./assets/facebook_icon.svg"></a>
+            </div>
+        </section>
+        <div class="h-[2px] w-5/6 mx-auto bg-slate-300 mb-36"></div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold">&nbsp; More about Paytm</span>
+            <div class="float-right h-[1px] w-5/6 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Company</span>
+            <div class="float-right h-[1px] w-5/6 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Investor Relations</span>
+            <div class="float-right h-[1px] w-5/6 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Career</span>
+            <div class="float-right h-[1px] w-11/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Recharge & pay bills</span>
+            <div class="float-right h-[1px] w-5/6 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Pay Loan EMI, Insurance premiums & Education Fee</span>
+            <div class="float-right h-[1px] w-8/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Book Travel & Entertainment</span>
+            <div class="float-right h-[1px] w-9/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Investment & Miscellaneous</span>
+            <div class="float-right h-[1px] w-9/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Insurance (Powered by KTM Insurance Broking Private Limited)</span>
+            <div class="float-right h-[1px] w-7/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Loans and Credit Cards</span>
+            <div class="float-right h-[1px] w-5/6 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+        <div class="my-6 mx-auto w-5/6">
+            <i class="fa-sharp fa-solid fa-plus"></i><span class="mb-1  text-[#505050] font-semibold"> &nbsp; Financial Tools & Calculators</span>
+            <div class="float-right h-[1px] w-9/12 mx-auto bg-slate-300 relative top-4 "></div>
+        </div>
+    </footer>
+    <section id="color-footer">
+        <div class="w-full h-2 bg-LightBlue"></div>
+        <div class="w-full h-2 bg-DarkBlue"></div>
+    </section>
+</body>
+</html>
